@@ -1,3 +1,343 @@
-hello word
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YOUR NAME — Robotics • AI • Vision</title>
+  <meta name="description" content="YOUR NAME — personal academic website: research, publications, news, teaching, professional activities." />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root{
+      --bg:#ffffff;--text:#121212;--muted:#4a4a4a;--accent:#0366d6;--surface:#f6f8fa;--border:#e4e7eb;
+      --maxw:980px;--radius:14px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{--bg:#0d1117;--text:#e6edf3;--muted:#9da7b3;--accent:#2f81f7;--surface:#151b23;--border:#30363d;}
+    }
+    html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.6;margin:0}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:color-mix(in hsl, var(--bg) 85%, transparent);z-index:10;border-bottom:1px solid var(--border)}
+    nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    .nav-left{display:flex;gap:16px;align-items:center}
+    .brand{font-weight:700}
+    .nav-links{display:flex;gap:14px;flex-wrap:wrap}
+    .wrapper{display:grid;grid-template-columns:260px 1fr;gap:28px;margin-top:24px}
+    @media (max-width:900px){.wrapper{grid-template-columns:1fr}}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+    .profile{position:sticky;top:72px}
+    .profile img{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--border)}
+    .profile h1{margin:16px 0 0}
+    .muted{color:var(--muted)}
+    section{scroll-margin-top:80px}
+    h2{margin-top:0}
+    .badges a{display:inline-block;border:1px solid var(--border);padding:4px 10px;border-radius:999px;margin:2px 6px 2px 0;font-size:0.9rem;background:var(--bg)}
+    .pubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+    .pub{border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--bg)}
+    .pub img{width:100%;height:160px;object-fit:cover;background:#ddd}
+    .pub .p{padding:14px}
+    .pub .title{font-weight:600}
+    .pub .meta{font-size:0.92rem;color:var(--muted)}
+    details{border:1px dashed var(--border);border-radius:10px;padding:10px;margin-top:8px;background:var(--surface)}
+    .news-year{font-weight:700;margin-top:10px}
+    ul.clean{list-style:none;padding-left:18px}
+    ul.clean li{margin:8px 0}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+    footer{border-top:1px solid var(--border);margin-top:32px;padding:24px 0;color:var(--muted);font-size:0.95rem}
+    .kicker{font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-size:.9rem}
+    .pill{display:inline-block;background:var(--surface);border:1px solid var(--border);padding:2px 8px;border-radius:999px;margin-left:8px;font-size:.85rem}
+    .anchor{opacity:.5;margin-left:6px;font-size:.9rem}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:700px){.contact-grid{grid-template-columns:1fr}}
+    .btn{display:inline-block;border:1px solid var(--border);background:var(--bg);padding:10px 14px;border-radius:10px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <div class="nav-left">
+          <span class="brand">YOUR NAME</span>
+          <span class="pill">Robot Perception • AI • Vision</span>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#opportunities">Opportunities</a>
+          <a href="#funding">Funding & Awards</a>
+          <a href="#activities">Professional Activities</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#talks">Talks</a>
+          <a href="#contact">Contact</a>
+          <a href="YOUR_CV.pdf" class="btn" target="_blank" rel="noopener">CV</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-hjajajajajajaj
+  <main class="container">
+    <div class="wrapper">
+      <!-- Left column: profile -->
+      <aside class="profile">
+        <img src="assets/profile.jpg" alt="Portrait of YOUR NAME" />
+        <h1>YOUR NAME</h1>
+        <p class="muted">Title / Role, Department, Institution</p>
+        <p class="muted">City • Country</p>
+        <p>
+          <a href="mailto:you@university.edu">you@university.edu</a><br/>
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a> ·
+          <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/YOUR" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://x.com/YOUR" target="_blank" rel="noopener">X/Twitter</a> ·
+          <a href="https://orcid.org/YOUR" target="_blank" rel="noopener">ORCID</a>
+        </p>
+        <p><span class="kicker">Affiliations</span><br/> Robot Perception Lab (RPL), ProjectG.AI (example) </p>
+        <p><span class="kicker">Interests</span><br/> Vision–tactile perception, multimodal fusion, face/identity modelling, diffusion & GANs, video understanding</p>
+      </aside>
+
+      <!-- Right column: content -->
+      <div>
+        <section id="about" class="card" aria-labelledby="about-h">
+          <h2 id="about-h">About <span class="anchor">#</span></h2>
+          <p>
+            I am a <strong>YOUR TITLE</strong> at <strong>YOUR INSTITUTION</strong>, where I lead <strong>Your Lab</strong>. 
+            My research spans robot perception with vision and tactile sensing, multimodal learning, and robust, real-time generative modelling for video applications.
+            I collaborate with academia and industry to build systems that safely and reliably interact with the physical world.
+          </p>
+          <p>
+            I’m currently recruiting excellent collaborators. See <a href="#opportunities">Opportunities</a>.
+          </p>
+        </section>
+
+        <section id="research" class="card" aria-labelledby="research-h">
+          <h2 id="research-h">Research <span class="anchor">#</span></h2>
+          <div class="grid-2">
+            <div>
+              <h3>Perception with Touch + Vision</h3>
+              <p>High-resolution tactile sensing paired with visual scene understanding; simulation-to-real transfer; 3D-aware geometric priors.</p>
+            </div>
+            <div>
+              <h3>Generative Video Models</h3>
+              <p>Diffusion and adversarial generators for identity-preserving video editing and face swapping with temporal consistency.</p>
+            </div>
+            <div>
+              <h3>Multimodal Fusion</h3>
+              <p>Contrastive and probabilistic fusion of visual, tactile, and kinematic cues for dexterous manipulation and recognition.</p>
+            </div>
+            <div>
+              <h3>Efficient & Real-Time</h3>
+              <p>Model distillation, lightweight backbones, and streaming inference for deployment on robots and edge devices.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="news" class="card" aria-labelledby="news-h">
+          <h2 id="news-h">News <span class="anchor">#</span></h2>
+          <div>
+            <div class="news-year">2025</div>
+            <ul class="clean">
+              <li>Sep — Our paper “TITLE” accepted to VENUE.</li>
+              <li>Aug — Invited talk at PLACE on multimodal robot perception.</li>
+            </ul>
+            <div class="news-year">2024</div>
+            <ul class="clean">
+              <li>Dec — Workshop “TITLE” organised at CONFERENCE.</li>
+              <li>Jul — Released dataset/code for PROJECT.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="publications" class="card" aria-labelledby="pubs-h">
+          <h2 id="pubs-h">Publications <span class="anchor">#</span></h2>
+          <p class="muted">A few highlighted entries. Replace placeholders and add more as desired.</p>
+          <div class="pubs">
+
+            <!-- Publication card -->
+            <article class="pub">
+              <img src="assets/paper1.jpg" alt="Teaser image for Paper 1" loading="lazy" />
+              <div class="p">
+                <div class="title">MagicMaskStream: Real-Time Pose-Robust Face Swapping via Geometric–Visual Fusion</div>
+                <div class="meta">YOUR NAME, Coauthor A, Coauthor B · <em>ICCV 2025</em></div>
+                <div class="badges" aria-label="links">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX">Paper</a>
+                  <a href="https://github.com/your/repo">Code</a>
+                  <a href="https://yourproject.site">Project</a>
+                  <a href="https://youtu.be/VIDEOID">Video</a>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+<pre>@inproceedings{your2025magicmaskstream,
+  title={MagicMaskStream: Real-Time Pose-Robust Face Swapping via Geometric–Visual Fusion},
+  author={Your, Name and A, Coauthor and B, Coauthor},
+  booktitle={ICCV},
+  year={2025}
+}</pre>
+                </details>
+              </div>
+            </article>
+
+            <article class="pub">
+              <img src="assets/paper2.jpg" alt="Teaser image for Paper 2" loading="lazy" />
+              <div class="p">
+                <div class="title">FaceSwapStream: Streaming GANs with Cross-Frame Aggregation</div>
+                <div class="meta">YOUR NAME, Collaborators · <em>TPAMI (under review)</em></div>
+                <div class="badges">
+                  <a href="#">Paper</a>
+                  <a href="#">Code</a>
+                  <a href="#">Project</a>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+<pre>@article{your2025faceswapstream,
+  title={FaceSwapStream: Streaming GANs with Cross-Frame Aggregation},
+  author={Your, Name and Collaborators},
+  journal={TPAMI},
+  year={2025}
+}</pre>
+                </details>
+              </div>
+            </article>
+
+            <article class="pub">
+              <img src="assets/paper3.jpg" alt="Teaser image for Paper 3" loading="lazy" />
+              <div class="p">
+                <div class="title">ViTacFusion: Vision–Tactile Multimodal Learning for Dexterous Manipulation</div>
+                <div class="meta">YOUR NAME, Coauthor C · <em>Robotics & Autonomous Systems 2024</em></div>
+                <div class="badges">
+                  <a href="#">Paper</a>
+                  <a href="#">Code</a>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+<pre>@article{your2024vitacfusion,
+  title={ViTacFusion: Vision–Tactile Multimodal Learning for Dexterous Manipulation},
+  author={Your, Name and C, Coauthor},
+  journal={Robotics and Autonomous Systems},
+  year={2024}
+}</pre>
+                </details>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section id="opportunities" class="card" aria-labelledby="opp-h">
+          <h2 id="opp-h">Opportunities <span class="anchor">#</span></h2>
+          <p>I am always happy to hear from prospective <strong>PhD students</strong>, <strong>postdocs</strong>, and <strong>visitors</strong>. 
+            Please email a brief CV, a short description of your research interests, and selected publications/code.</p>
+          <ul class="clean">
+            <li><strong>PhD:</strong> Open year-round (subject to programme deadlines).</li>
+            <li><strong>Postdoc:</strong> Get in touch to discuss fit and funding options.</li>
+            <li><strong>Interns/Visitors:</strong> Usually 3–6 months; remote/hybrid possible.</li>
+          </ul>
+        </section>
+
+        <section id="funding" class="card" aria-labelledby="fund-h">
+          <h2 id="fund-h">Funding & Awards <span class="anchor">#</span></h2>
+          <ul class="clean">
+            <li>PI — Project Title, Funder, Amount, Dates.</li>
+            <li>Co-PI — Project Title, Funder, Amount, Dates.</li>
+            <li>Awards — Best Paper/Area Chair Award/Travel Grant, Year.</li>
+          </ul>
+        </section>
+
+        <section id="activities" class="card" aria-labelledby="act-h">
+          <h2 id="act-h">Professional Activities <span class="anchor">#</span></h2>
+          <div class="grid-2">
+            <div>
+              <h3>Service</h3>
+              <ul class="clean">
+                <li>Associate Editor — ICRA/IROS (Years)</li>
+                <li>Program Committee — IJCAI/AAMAS (Years)</li>
+                <li>Reviewer — TPAMI/IJCV/CVPR/NeurIPS/ICLR/ICRA/IROS</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Organisation</h3>
+              <ul class="clean">
+                <li>Workshop Chair — “Title”, Venue, Year</li>
+                <li>Session Chair — Topic, Conference, Year</li>
+                <li>Special Issue Guest Editor — Journal, Year</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="teaching" class="card" aria-labelledby="teach-h">
+          <h2 id="teach-h">Teaching <span class="anchor">#</span></h2>
+          <ul class="clean">
+            <li>Course Name (Level) — Term, Year</li>
+            <li>Seminar/Reading Group — Topic, Year</li>
+            <li>Guest Lectures — Course, Institution, Year</li>
+          </ul>
+        </section>
+
+        <section id="talks" class="card" aria-labelledby="talks-h">
+          <h2 id="talks-h">Selected Talks <span class="anchor">#</span></h2>
+          <ul class="clean">
+            <li>“Talk Title” — Venue, City, Year (<a href="#">slides</a>)</li>
+            <li>“Talk Title” — Venue, City, Year</li>
+          </ul>
+        </section>
+
+        <section id="contact" class="card" aria-labelledby="contact-h">
+          <h2 id="contact-h">Contact <span class="anchor">#</span></h2>
+          <div class="contact-grid">
+            <div>
+              <p><strong>Email:</strong> <a href="mailto:you@university.edu">you@university.edu</a></p>
+              <p><strong>Office:</strong> Building, Room, Street, City</p>
+              <p><strong>Postal:</strong> Dept, Institution, Street, City, Postcode, Country</p>
+            </div>
+            <div>
+              <p><a class="btn" href="YOUR_CV.pdf" target="_blank" rel="noopener">Download CV</a></p>
+              <p><a class="btn" href="mailto:you@university.edu?subject=Prospective%20collaboration">Email me</a></p>
+              <p><a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+          </div>
+        </section>
+
+        <footer aria-label="Site footer">
+          <div>© <span id="y">2025</span> YOUR NAME. Last updated <span id="lu">2025-09-30</span>.</div>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Update year automatically
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Optional: smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  </script>
+
+  <!-- Structured data to help search engines -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"YOUR NAME",
+    "jobTitle":"YOUR TITLE",
+    "affiliation":{"@type":"Organization","name":"YOUR INSTITUTION"},
+    "url":"https://YOUR_GITHUB_USERNAME.github.io/",
+    "sameAs":[
+      "https://scholar.google.com/citations?user=XXXX",
+      "https://github.com/YOUR_GITHUB",
+      "https://www.linkedin.com/in/YOUR",
+      "https://x.com/YOUR",
+      "https://orcid.org/YOUR"
+    ]
+  }
+  </script>
+</body>
+</html>
